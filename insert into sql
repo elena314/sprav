@@ -1,0 +1,10 @@
+примеры
+вставка датафрейма
+
+client = Client(host='localhost', settings={'use_numpy': True})
+client.insert_dataframe(
+    'INSERT INTO gsi.requests VALUES',
+    pd.DataFrame(data, columns=['url', 'req'])
+)
+
+
